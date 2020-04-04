@@ -17,6 +17,13 @@
 
                 ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
                 ctx.fillRect(30, 30, 50, 50);
+
+                <!--1.create a path 2.move to (x,y) 3.draw a line to (x,y) 4. draw a line to (x,y), 5. fill in path, auto draws a line from current spot to beginning-->
+                ctx.beginPath();
+                ctx.moveTo(75, 50);
+                ctx.lineTo(100, 75);
+                ctx.lineTo(100, 25);
+                ctx.fill();
             }
         }
     </script>
