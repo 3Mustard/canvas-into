@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html>
-<body>
-    <canvas id="tutorial" width="150" height="150">
-        anything between these tags is fallback should canvas not be supported by the browser.
-    </canvas>
+<head>
+    <meta charset="utf-8"/>
+    <title>Canvas tutorial</title>
+    <script type="text/javascript">
+        function draw() {
+            let canvas = document.getElementById('tutorial');
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+            }
+        }
+    </script>
+    <style type="text/css">
+        canvas { border: 1px solid black; }
+    </style>
+</head>
+<body onload="draw();">
+<canvas id="tutorial" width="500" height="500"></canvas>
 </body>
 </html>
